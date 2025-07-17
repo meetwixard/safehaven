@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 0 1rem;
+    position: relative;
+  }
+
+  .navbar a:hover::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #ffdc00;
+    margin: 0.5rem auto;
+  }
+
+  .navbar a.active::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #ffdc00;
+    margin: 0.5rem auto;
+  }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .logo span {
+    color: #ffdc00;
+  }
+
+  .main-content {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .main-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .main-content h1 span {
+    color: #ffdc00;
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    /* overflow-y: scroll; */
+    /* overscroll-behavior: ; */
+  }
+
+  .category {
+    width: 180px;
+    text-align: center;
+    position: relative;
+    margin: 2rem;
+  }
+
+  /* .category img {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: start;
+  } */
+
+  .category label {
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    background-color: #ffdc00;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .category button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ffdc00;
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+
+  .category button:hover {
+    background-color: #ffdc00;
+    color: #000;
+  }
+  .category button a{
+    text-decoration: none;
+    color: black;
+  }

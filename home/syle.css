@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 0 1rem;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+  
+
+  .navbar a:hover::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #ffdc00;
+    margin: 0.5rem auto;
+  }
+
+  /* .navbar a.active::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #ffdc00;
+    margin: 0.5rem auto;
+  } */
+
+  /* .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    color: yellow;
+    margin-top: 1.2rem;
+  } */
+
+  .main-content {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .main-content p {
+    font-size: 1.2rem;
+    color: yellow;
+    margin-bottom: 3rem;
+  }
+
+  .wave {
+    margin-top: 1rem;
+    background-image: url('/images/webkit-06-01.png');
+    background-size: cover;
+    background-position: center;
+    width: 130%;
+    height: 300px;
+    justify-self: center;
+    align-self: end;
+    /* margin-left: -2.5rem; */
+}
+
+.logo {
+  background-image: url('/images/safehaven-12.png');
+  background-position: center;
+  justify-self: center;
+  align-self: end;
+  /* height: 300px; */
+  /* margin-top: 1rem; */
+}
